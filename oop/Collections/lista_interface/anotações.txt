@@ -1,0 +1,34 @@
+Coleção ordenada de elementos que permite a duplicação e o acesso por índice. 
+/*
+ * Em listas (ArrayList, LinkedList), os elementos são adicionados na ordem em que aparecem na coleção fornecida.
+ * Em conjuntos (HashSet, TreeSet), a ordem dos elementos é determinada pelo tipo de conjunto e suas características (por exemplo, HashSet não garante ordem, enquanto TreeSet mantém a ordem natural).
+ */
+Interface List
+Descrição: A interface List estende a interface Collection e fornece métodos específicos para manipular listas de elementos. Ela permite a inserção de elementos em posições específicas, o acesso a elementos pelo índice e a manutenção da ordem de inserção dos elementos.
+
+Métodos Principais:
+
+- add(E e): Adiciona um elemento ao final da lista.
+- add(int index, E element): Adiciona um elemento na posição especificada.
+- get(int index): Retorna o elemento na posição especificada.
+- set(int index, E element): Substitui o elemento na posição especificada.
+- remove(int index): Remove o elemento na posição especificada.
+- indexOf(Object o): Retorna o índice da primeira ocorrência do elemento especificado.
+- lastIndexOf(Object o): Retorna o índice da última ocorrência do elemento especificado.
+- subList(int fromIndex, int toIndex): Retorna uma visão da parte da lista entre os índices especificados.
+
+2. Implementações Comuns de List
+ArrayList:
+
+Descrição: Implementa a interface List com base em um array dinâmico. É a implementação mais comum de List e oferece acesso rápido aos elementos por índice.
+Características:
+Performance de acesso rápido (O(1)).
+Maior custo em inserções e remoções no meio da lista devido ao deslocamento dos elementos (O(n)).
+Mais eficiente em termos de memória comparado ao LinkedList para listas pequenas a médias.
+LinkedList:
+
+Descrição: Implementa a interface List com base em uma lista duplamente ligada. Permite operações de inserção e remoção eficientes em qualquer posição da lista.
+Características:
+Performance de inserção e remoção eficiente (O(1)) quando o nó é conhecido.
+Acesso por índice mais lento (O(n)) comparado ao ArrayList.
+Implementa as interfaces Deque e Queue, oferecendo métodos adicionais para trabalhar com filas e deques.
