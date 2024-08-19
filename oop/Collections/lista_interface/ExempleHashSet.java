@@ -20,7 +20,6 @@ public class ExempleHashSet {
 
         set1.addAll(set2);
 
-        //Interando
         for(String lista:set1){
             System.out.println(lista);
         }

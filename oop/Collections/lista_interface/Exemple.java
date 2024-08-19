@@ -28,7 +28,6 @@ public class Exemple {
         System.out.println(arryListGenerics.addAll(arryListGenerics2));
         System.out.println(arryListGenerics);
 
-        //Interando sobre
         for (String lista: arryListGenerics ){
             System.out.println(lista);
         }
