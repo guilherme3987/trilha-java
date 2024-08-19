@@ -2,7 +2,12 @@ Coleção ordenada de elementos que permite a duplicação e o acesso por índic
 /*
  * Em listas (ArrayList, LinkedList), os elementos são adicionados na ordem em que aparecem na coleção fornecida.
  * Em conjuntos (HashSet, TreeSet), a ordem dos elementos é determinada pelo tipo de conjunto e suas características (por exemplo, HashSet não garante ordem, enquanto TreeSet mantém a ordem natural).
+
+HashSet > LinkedHashSet > TreeSet
+
+
  */
+
 Interface List
 Descrição: A interface List estende a interface Collection e fornece métodos específicos para manipular listas de elementos. Ela permite a inserção de elementos em posições específicas, o acesso a elementos pelo índice e a manutenção da ordem de inserção dos elementos.
 
