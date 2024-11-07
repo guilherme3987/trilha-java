@@ -1,5 +1,5 @@
 package com.designpatterns.observer;
 
-public class Observer {
-    
+public interface Observer {
+    void atualizar(Pedido pedido);
 }
